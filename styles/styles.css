@@ -17,7 +17,8 @@
     border: none;
 }
 body{
-    background: var(--primary);
+    background: var(--Neutral_Light);
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
