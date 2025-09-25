@@ -1,0 +1,26 @@
+:root{
+    --primary: #FF3C00;
+    --Secondary: #111111;
+    --Accent: #FFD700;
+    --Neutral_Light:#F5F5F5;
+    --Neutral_Dark: #444444;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+body{
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
