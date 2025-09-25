@@ -1,9 +1,15 @@
 :root{
+    /* colors */
     --primary: #FF3C00;
     --Secondary: #111111;
     --Accent: #FFD700;
     --Neutral_Light:#F5F5F5;
     --Neutral_Dark: #444444;
+    --text_color: #212121;
+
+    /* measurements */
+    --max_width: 1200px;
+
 }
 *{
     margin: 0;
@@ -19,9 +25,37 @@
 body{
     background: var(--Neutral_Light);
     font-family: 'Poppins', sans-serif;
+    color: var(--text_color);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+}
+.section_container{
+   
+    max-width: var(--max_width);
+    margin: auto;
+    background: #fff;
+    padding: 5rem 1rem;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.section_header{
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-size: 2.25em;
+    margin-bottom: 1rem;
+    font-weight:600;
+    color:var(--text_color)
+}
+.section::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 50px;
+    background: var(--primary);
+    border-radius: 25px;
 }
