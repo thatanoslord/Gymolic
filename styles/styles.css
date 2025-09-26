@@ -34,20 +34,17 @@ body {
 .section_container {
   max-width: var(--max_width);
   margin: auto;
-  background: #fff;
   padding: 5rem 1rem;
-  border-radius: 6px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .section_header {
   position: relative;
-  padding-bottom: 0.5rem;
+  padding-bottom: .5rem;
   font-size: 2.25em;
   margin-bottom: 1rem;
   font-weight: 600;
   color: var(--text_color);
 }
-.section::after {
+.section_header::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -56,10 +53,12 @@ body {
   width: 50px;
   background: var(--primary);
 }
+
 .section_description {
   max-width: 900px;
   color: var(--Neutral_Dark);
 }
+
 .btn {
   padding: 0.75rem 1.5rem;
   outline: none;
@@ -115,7 +114,7 @@ nav {
   max-width: 40px;
 }
 
-/* .nav_links {
+.nav_links {
   position: absolute;
   top: 68px;
   left: 0;
@@ -123,43 +122,5 @@ nav {
   width: 100%;
   list-style: none;
   display: flex;
-  align-items: center;} */
+  align-items: center;}
 
-  nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  background-color: var(--Neutral_Light);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.nav_header {
-  max-width: var(--max_width);
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav_links {
-  display: flex;              /* horizontal */
-  align-items: center;
-  gap: 2rem;                  /* spacing between links */
-  margin: 0;
-  padding: 0;
-  position: static;           /* remove absolute positioning */
-  width: auto;
-}
-
-.nav_links li a {
-  color: var(--text_color);
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav_links li a:hover {
-  color: var(--primary);      /* orange highlight */
-}
