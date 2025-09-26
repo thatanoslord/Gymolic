@@ -60,16 +60,16 @@ body {
 }
 
 .btn {
-  padding: 0.75rem 1.5rem;
+  padding: 12px 24px;
   outline: none;
   border: none;
-  font-size: 1.1em;
+  font-size: 17.6px;
   white-space: nowrap;
   background: var(--primary);
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.3s ;
 }
 .btn:hover {
   background: var(--Accent);
@@ -88,9 +88,15 @@ html,
 body {
   scroll-behavior: smooth;
 }
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
 .header {
   background-color: var(--Neutral_Light);
 }
+
 nav {
   position: fixed;
   isolation: isolate;
@@ -98,7 +104,7 @@ nav {
   z-index: 10;
 }
 .nav_header {
-  padding: 1rem;
+  padding: 16px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -109,7 +115,10 @@ nav {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-weight: 600;
+  color: var(--text_color);
 }
+
 .logo img {
   max-width: 40px;
 }
@@ -118,9 +127,28 @@ nav {
   position: absolute;
   top: 68px;
   left: 0;
-  padding: 2rem;
+  padding: 32px;
   width: 100%;
   list-style: none;
   display: flex;
-  align-items: center;}
+  align-items: center;
+  justify-content: center ;
+  flex-direction: column;
+  gap: 32px;
+  background-color: var(--Neutral_Light);
+  transition: 0.5s;
+  z-index: -1;
+  transform: translateY(-100%);
 
+}
+.nav_links.open{
+  transform: translateY(0);
+}
+
+li a{
+  color: var(--text_color);
+  transition: 0.3s;
+}
+li a:hover{
+  color: var(--primary);
+}
