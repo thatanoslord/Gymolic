@@ -22,14 +22,13 @@
   border: none;
 }
 body {
+  
   background: var(--Neutral_Light);
   font-family: "Poppins", sans-serif;
   color: var(--text_color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  margin: 0;
+  padding: 0;  /* Fix */
 }
 .section_container {
   max-width: var(--max_width);
