@@ -140,7 +140,7 @@ nav {
   justify-content: center ;
   flex-direction: column;
   gap: 32px;
-  /* background-color: var(--Neutral_Light); */
+  background-color: var(--Neutral_Light);
   transition: 0.5s;
   z-index: -1;
   transform: translateY(-100%);
@@ -150,10 +150,13 @@ nav {
   transform: translateY(0);
 }
 
-li a{
+.link a{
   color: var(--text_color);
   transition: 0.3s;
 }
-li a:hover{
+.link a:hover{
   color: var(--primary);
+}
+.nav_menu_byn{
+  font-size: 22px;
 }
