@@ -1,4 +1,4 @@
-const menuBtn = document.getElementById("menu_icon");   
+const menuBtn = document.getElementById("menu_btn");   
 const navLinks = document.getElementById("nav_links");
            
 
