@@ -223,5 +223,26 @@ nav {
   gap: 32px;
 }
 .about_card{
-  
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+}
+.about_card span{
+  padding: 11px 19px;
+  font-size: 32px;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 100%;
+}
+.about_card h4{
+  margin-bottom:8px;
+  font-size: 24px;
+  font-weight:500;
+  color: var(--Secondary);
+}
+.about_card p{
+  color: var(--Neutral_Dark);
+  font-size: 16px;
+  line-height: 1.8;
 }
