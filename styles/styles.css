@@ -246,3 +246,35 @@ nav {
   font-size: 16px;
   line-height: 1.8;
 }
+
+.class_grid{
+  margin-top: 64px;
+  display: grid;
+  gap: 32px;
+ 
+}
+.class_card{
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.class_card .class_bg{
+  position:absolute;
+  max-width: 175px;
+  top: -48px;
+  right:-16px;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.3s ease ;
+}
+.class_card:hover .class_bg{
+  opacity: 0.5;
+}
+
+.class_card:hover{
+  transform: translateY(-10px);
+}
