@@ -164,7 +164,7 @@ nav {
 .header_container{
   max-width: var(--max_width);
   margin: auto;
-  display: flex;
+  display: grid;
   gap:32px;
   align-items: center;
   justify-content: space-between;
@@ -180,5 +180,17 @@ nav {
   font-size: 40px;
   font-weight: 400;
   color: var(--Secondary);
-  
+
+}
+.header_content .section_header{
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.header_content p{
+  margin-bottom: 32px; 
+  color: var(--Neutral_Dark);
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 600px;
 }
