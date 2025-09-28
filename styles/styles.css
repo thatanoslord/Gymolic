@@ -157,6 +157,6 @@ nav {
 .link a:hover{
   color: var(--primary);
 }
-.nav_menu_byn{
+.nav_menu_btn{
   font-size: 22px;
 }
