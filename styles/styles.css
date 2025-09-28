@@ -160,3 +160,25 @@ nav {
 .nav_menu_btn{
   font-size: 22px;
 }
+
+.header_container{
+  max-width: var(--max_width);
+  margin: auto;
+  display: flex;
+  gap:32px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 1rem 0 1rem;
+}
+
+.header_image img{
+  max-width: 500px;
+  margin: auto;
+}
+
+.header_content h4{
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--Secondary);
+  
+}
