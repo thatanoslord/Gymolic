@@ -194,3 +194,34 @@ nav {
   line-height: 1.8;
   max-width: 600px;
 }
+
+.about_container{
+  display: grid;
+  gap: 32px;
+  
+}
+.about_image{
+  position: relative;
+  isolation: isolate;
+}
+
+.about_image img{
+  max-width: 500px;
+  margin: auto;
+}
+.about_image .about_bg{
+  position:absolute;
+  right: 32px;
+  top:48px;
+  max-width: 250px;
+  z-index: -1;
+  opacity: 0.5;
+}
+.about-grid{
+  margin-top: 32px;
+  display: grid;
+  gap: 32px;
+}
+.about_card{
+  
+}
