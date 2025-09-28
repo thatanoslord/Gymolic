@@ -28,3 +28,11 @@ scrollReveal().reveal(".header_image img", {
   ...scrollRevealOption,
 });
 
+scrollReveal().reveal(".header_content h4, .header_content .section_header",{
+  ...scrollRevealOption,
+  delay : 1000,
+});
+scrollReveal().reveal(".header_content h4, .header_content .section_header",{
+  ...scrollRevealOption,
+  delay : 1500,
+});
