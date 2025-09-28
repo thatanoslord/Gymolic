@@ -278,3 +278,15 @@ nav {
 .class_card:hover{
   transform: translateY(-10px);
 }
+
+.class_content{
+  flex: 1;
+  padding: 16px;
+  background-color: var(--primary);
+  color: var(--Accent);
+}
+.class_content h4{
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
