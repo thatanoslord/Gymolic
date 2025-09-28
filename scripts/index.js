@@ -41,19 +41,20 @@ scrollReveal().reveal(".header_content h4, .header_content .section_header", {
 
 // About container
 
-scrollRevealOption().reveal("about_image img", {
+scrollReveal().reveal("about_image img", {
   ...scrollRevealOption,
   origin: "left",
 });
-scrollRevealOption().reveal("about_content .section_header", {
+
+scrollReveal().reveal("about_content .section_header", {
   ...scrollRevealOption,
   delay: 500,
 });
-scrollRevealOption().reveal("about_content .section_description", {
+scrollReveal().reveal("about_content .section_description", {
   ...scrollRevealOption,
   delay: 1000,
 });
-scrollRevealOption().reveal("about_card", {
+scrollReveal().reveal("about_card", {
   ...scrollRevealOption,
   delay: 1500,
   interval: 500,

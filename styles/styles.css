@@ -217,7 +217,7 @@ nav {
   z-index: -1;
   opacity: 0.5;
 }
-.about-grid{
+.about_grid{
   margin-top: 32px;
   display: grid;
   gap: 32px;
