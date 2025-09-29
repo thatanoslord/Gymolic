@@ -150,7 +150,7 @@ nav {
   transform: translateY(0);
 }
 
-.link a{
+.link a {
   color: var(--text_color);
   transition: 0.3s;
 }
@@ -346,8 +346,14 @@ padding: 32px 16px;
   align-items: center;
   gap: 16px;
 }
-.trainer_socials a{
+.trainer_socials a {
   font-size: 20px;
   color: var(--Neutral_Dark);
   transition: 0.3s;
+}
+
+.trainer_socials a:hover{
+  font-size: 30px;
+  color: var(--primary);
+  transition: 0.3s ease;
 }
