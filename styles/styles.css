@@ -357,3 +357,72 @@ padding: 32px 16px;
   color: var(--primary);
   transition: 0.3s ease;
 }
+
+.price_container :is(.section_header, .section_description){
+  width: fit-content;
+   margin-inline: auto;
+   text-align: center;
+ }
+ 
+ .price_container .section_header::after{
+   left: 50%;
+   transform: translateX(-50%);
+ }
+ .price_grid{
+   margin-top: 64px;
+   display: grid;
+   gap: 32px;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ }
+ .price_card{
+   position: relative;
+   isolation: isolate;
+   background-color: var(--Neutral_Light);
+   padding: 32px 16px;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+   transition: 0.3s ease;
+   cursor: pointer;
+ }
+ .price_card:hover{
+   transform: translateY(-10px);
+ }
+ .price_card .price_bg{
+   position:absolute;
+   max-width: 150px;
+   top:-32px;
+   right:-16px;
+   z-index: -1;
+   opacity: 0;
+   transition: 0.3s ease ;
+ }
+ .price_card:hover .price_bg{
+   opacity: 0.5;
+ }
+ .price_card h4{
+   font-size: 24px;
+   font-weight: 600;
+   color: var(--text_color);
+ }
+ .price_card h5{
+   margin-block: 16px;
+   font-size: 16px;
+   font-weight: 500;
+   color: var(--Neutral_Dark);
+ }
+ .price_amount{
+   font-size: 36px;
+   font-weight: 700;
+   color: var(--primary);
+ }
+ .price_duration{
+   margin-bottom: 16px;
+   color: var(--Neutral_Dark);
+ }
+ .price_features{
+   margin-bottom: 24px;
+ }
+ .price_features li{
+   margin-bottom: 8px;
+   color: var(--Neutral_Dark);
+ }
