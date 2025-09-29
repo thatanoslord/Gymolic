@@ -59,3 +59,13 @@ scrollReveal().reveal("about_card", {
   delay: 1500,
   interval: 500,
 });
+
+
+//Pricing section
+
+scrollReveal().reveal("price_card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+
