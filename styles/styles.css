@@ -290,3 +290,54 @@ nav {
   font-weight: 500;
   margin-bottom: 5px;
 }
+
+.trainer_container :is(.section_header, .section_description){
+ width: fit-content;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.trainer_container .section_header::after{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tainer_grid{
+  margin-top: 64px;
+  display: grid;
+  align-items: center;
+}
+
+.trainer_card{
+  height: 100%;
+  display: grid;
+  align-items: center;
+}
+
+.trainer_card img{
+  height: 100%;
+  object-fit: cover;
+
+}
+.trainer_content{
+padding: 32px 16px;
+
+}
+.trainer_content h4{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text_color);
+}
+
+.trainer_container h5{
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--Neutral_Dark);
+
+}
+.trainer_content p{
+  margin-block: 16px;
+  color: var(--Neutral_Dark);
+  font-size: 16px;
+  line-height: 1.8;
+}
