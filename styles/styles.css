@@ -553,3 +553,26 @@ nav {
   border: 1px solid var(--Accent);
     transition: 0.3s ease;
 }
+
+.footer_col h4{
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--Secondary);
+}
+.footer_links a{
+  display: block;
+  margin-bottom: 16px;
+  color: var(--Neutral_Light);
+  transition: 0.3s;
+}
+.footer_links a:hover{
+  color: var(--Accent);
+  transition: 0.3s ease;
+}
+.footer_bar{
+  padding: 16px;
+  font-size: 12px;
+  color: var(--Neutral_Light);
+  text-align: center;
+}
