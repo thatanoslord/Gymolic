@@ -19,53 +19,64 @@ navLinks.addEventListener("click", (e) => {
 //scrollReveal
 
 const scrollRevealOption = {
-  distance: "50",
+  distance: "50px",
   origin: "bottom",
   duration: 1000,
 };
 
-//Header container
-
-scrollReveal().reveal(".header_image img", {
+// Header container
+ScrollReveal().reveal(".header_image img", {
   ...scrollRevealOption,
 });
 
-scrollReveal().reveal(".header_content h4, .header_content .section_header", {
+ScrollReveal().reveal(".header_content h4, .header_content .section_header", {
   ...scrollRevealOption,
   delay: 1000,
 });
-scrollReveal().reveal(".header_content h4, .header_content .section_header", {
+
+ScrollReveal().reveal(".header_content p", {
   ...scrollRevealOption,
   delay: 1500,
 });
 
 // About container
-
-scrollReveal().reveal("about_image img", {
+ScrollReveal().reveal(".about_image img", {
   ...scrollRevealOption,
   origin: "left",
 });
 
-scrollReveal().reveal("about_content .section_header", {
+ScrollReveal().reveal(".about_content .section_header", {
   ...scrollRevealOption,
   delay: 500,
 });
-scrollReveal().reveal("about_content .section_description", {
+
+ScrollReveal().reveal(".about_content .section_description", {
   ...scrollRevealOption,
   delay: 1000,
 });
-scrollReveal().reveal("about_card", {
+
+ScrollReveal().reveal(".about_card", {
   ...scrollRevealOption,
   delay: 1500,
   interval: 500,
 });
 
-
-//Pricing section
-
-scrollReveal().reveal("price_card", {
+// Pricing section
+ScrollReveal().reveal(".price_card", {
   ...scrollRevealOption,
   interval: 500,
 });
-
-
+//Rating swiper
+const clientSwiper = new Swiper(".swiper", {
+  loop: true,
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
