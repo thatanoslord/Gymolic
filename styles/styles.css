@@ -503,7 +503,7 @@ nav {
 /* footer */
 
 .footer {
-  background-color: var(--Secondary);
+  background-color: var(--primary );
   color: var(--Neutral_Light);
   padding: 2rem 1rem;
 }
