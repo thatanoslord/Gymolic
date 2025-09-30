@@ -474,7 +474,7 @@ nav {
 }
 .client_rating {
   margin-bottom: 16px;
-  color:var(--Accent);
+  color: var(--Accent);
 }
 .client_card p {
   margin-bottom: 16px;
@@ -498,4 +498,58 @@ nav {
 
 .swiper-slide {
   flex-shrink: 0;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--Secondary);
+  color: var(--Neutral_Light);
+  padding: 2rem 1rem;
+}
+
+.footer_container {
+  display: grid;
+  gap: 32px;
+}
+
+.footer_logo{
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap:8px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--Secondary);
+}
+
+.footer_logo img{
+  max-width: 40px;
+
+}
+
+.footer_col p{
+  margin-bottom: 32px;
+  color: var(--Neutral_Light);
+  
+
+}
+.footer_socials{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer_socials a{
+  padding: 5px 10px ;
+  font-size: 20px;
+  color: var(--Neutral_Light);
+  border-radius: 100%;
+  border: 1px solid var(--Neutral_Light);
+    transition: 0.3s;
+}
+.footer_socials a:hover{
+  background-color: var(--Accent);
+  color: var(--primary);
+  border: 1px solid var(--Accent);
+    transition: 0.3s ease;
 }
