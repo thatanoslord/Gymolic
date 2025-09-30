@@ -576,3 +576,38 @@ nav {
   color: var(--Neutral_Light);
   text-align: center;
 }
+
+
+/*Responsiveness*/
+
+
+@media (width > 400px) {
+  .header_container {
+    grid-template-columns: 1fr;
+  }
+  .about_container {
+    grid-template-columns: 1fr;
+  }
+  .about_image .about_bg {
+    display: none;
+  }
+  .about_grid {
+    grid-template-columns: 1fr;
+  }
+  .class_grid {
+
+    grid-template-columns: repeat(2,1fr);
+    gap: 32px 16px;
+  }
+  .trainer_grid {
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+  .trainer_card:nth-child(3n) {
+    grid-area: 2/2/3/3;
+  }
+  .price_grid {
+    grid-template-columns: repeat(2,1fr);
+    gap: 32px 16px;
+  } 
+}
