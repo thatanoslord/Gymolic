@@ -594,7 +594,7 @@ nav {
     gap: 32px 16px;
   }
   .footer_container {
-    grid-template-columns: 2, 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -648,7 +648,7 @@ nav {
     gap: 32px 16px;
   }
   .footer_container {
-    grid-template-columns: 4, 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
   
   .footer_col:first-child {
