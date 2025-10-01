@@ -639,6 +639,10 @@ nav {
   .trainer_card:nth-child(3n) {
     grid-area: auto;
   }
+  .trainer_content{
+    padding: 32px;
+  }
+
   .price_grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 32px 16px;
@@ -647,4 +651,8 @@ nav {
     grid-template-columns: 4, 1fr;
   }
   
+  .footer_col:first-child {
+    grid-column: 1/3;
+  }
 }
+
