@@ -598,61 +598,26 @@ nav {
   }
 }
 
-@media (width > 768px) {
-  nav{
-    position: static;
-    padding:32px 16px ;
-    max-width: (var(--max_width));
-    margin-inline:auto ;
-    display: flex;
-    align-items: center;
-    justify-content:space-between ;
-    gap: 32px;
+@media (max-width: 768px) {
+  .nav_links {
+    top: 60px;
+    padding: 16px;
   }
-  .nav_menu_btn{
-    
+  .nav_links.open {
+    transform: translateY(0);
+  }
+  .nav_menu_btn {
+    display: block;
+  }
+  .nav_links {
+    flex-direction: column;
+    gap: 16px;
   }
   .header_container {
-    grid-template-columns: 2fr 3fr;
+    flex-direction: column;
+    align-items: center;
   }
-  .about_container {
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
-  }
-  .about_image .about_bg {
-    max-width: 300px;
-    top: 64px;
-    right: 64px;
-  }
-  .about_grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px 16px;
-  }
-  .class_grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px 16px;
-  }
-  .trainer_grid {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: stretch;
-  }
-  .trainer_card:nth-child(3n) {
-    grid-area: auto;
-  }
-  .trainer_content{
-    padding: 32px;
-  }
-
-  .price_grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px 16px;
-  }
-  .footer_container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  
-  .footer_col:first-child {
-    grid-column: 1/3;
+  .header_image img {
+    max-width: 100%;
   }
 }
-
