@@ -7,18 +7,19 @@
 }
 
 body {
-  background-color: #0b0f1a;
+background-color: #0b0f1a;
   background-image: url('grid-pattern (1).png');
   background-size: cover;
   background-position: center;
   color: #fff;
   font-family: 'Inter', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
   text-align: center;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .navbar {
@@ -54,8 +55,12 @@ body {
 }
 
 .hero {
-  max-width: 800px;
+  height: 100vh;
+  width: 100vw;
+  /* max-width: 800px; */
   padding: 0 20px;
+  padding-top: 120px; /* Pushes content below the header */
+  min-height: 100vh;
 }
 
 .subtitle {
@@ -74,7 +79,7 @@ body {
 
 .headline span {
   background: linear-gradient(90deg, #b07aff, #c1a0ff);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 
