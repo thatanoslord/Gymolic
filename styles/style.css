@@ -105,3 +105,13 @@ body {
   margin-left: 6px;
   font-size: 1.2rem;
 }
+
+/* second section */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
