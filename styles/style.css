@@ -176,3 +176,25 @@ body {
   font-size: 0.9rem;
 }
 
+/* Tech stack card */
+.tech-stack p {
+  color: #9c9c9c;
+  font-size: 0.9rem;
+}
+
+.tech-stack h3 {
+  margin: 8px 0 15px;
+}
+
+.stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stack-list span {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
