@@ -115,3 +115,19 @@ body {
   margin: 80px auto;
   padding: 0 20px;
 }
+
+.card {
+  background: rgba(15, 18, 30, 0.8);
+  border-radius: 16px;
+  padding: 24px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(25, 28, 45, 0.9);
+}
