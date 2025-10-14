@@ -131,3 +131,13 @@ body {
   transform: translateY(-5px);
   background: rgba(25, 28, 45, 0.9);
 }
+
+/* Large featured card with image */
+.card.large {
+  grid-column: span 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background: linear-gradient(145deg, #2e1f5e, #0d0f20);
+  position: relative;
+}
