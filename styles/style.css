@@ -315,3 +315,18 @@ header {
   opacity: 0.85;
   transition: opacity 0.3s ease;
 }
+
+.tech-icons img:hover {
+  opacity: 1;
+}
+
+.live-link {
+  color: #b07aff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.live-link:hover {
+  color: #c5a8ff;
+}
