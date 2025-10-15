@@ -79,7 +79,7 @@ header {
 
 .headline span {
   background: linear-gradient(90deg, #b07aff, #c1a0ff);
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
