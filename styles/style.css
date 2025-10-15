@@ -33,6 +33,17 @@ header {
   padding: 12px 30px;
 }
 
+/* Navbar expanded on scroll */
+.navbar-expanded {
+  top: 0;
+  width: 100%;
+  background: rgba(20, 25, 40, 0.95);
+  backdrop-filter: blur(15px);
+  border-radius: 0;
+  padding: 16px 0;
+  transition: all 0.3s ease;
+}
+
 .navbar ul {
   list-style: none;
   display: flex;
