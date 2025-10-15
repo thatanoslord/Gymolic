@@ -283,3 +283,22 @@ header {
   transform: translateY(-5px);
   background: rgba(25, 28, 45, 0.95);
 }
+
+.project-card img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  color: #aaa;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
