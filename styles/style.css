@@ -258,3 +258,14 @@ header {
   color: #fff;
   margin-bottom: 50px;
 }
+.recent-projects h2 span {
+  background: linear-gradient(90deg, #b07aff, #c1a0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
